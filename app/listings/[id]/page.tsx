@@ -4,15 +4,16 @@ import { mockListings } from '@/lib/mockData';
 import Header from '@/components/Header';
 import ListingCard from '@/components/ListingCard';
 import { MapPin, Clock, Heart, Share2 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, use } from 'react';
 import Link from 'next/link';
 
 export default function ListingDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const listing = mockListings.find((l) => l.id === params.id);
+  const { id } = use(params);
+  const listing = mockListings.find((l) => l.id === id);
   const [isSaved, setIsSaved] = useState(false);
 
   if (!listing) {
