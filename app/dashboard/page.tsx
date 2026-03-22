@@ -120,7 +120,7 @@ export default function DashboardPage() {
             {activeTab === 'saved' && (
               <div>
                 <h2 className="text-lg font-semibold text-slate-900 mb-6">
-                  Listings you've saved
+                  Listings you&apos;ve saved
                 </h2>
 
                 {savedListings.length > 0 ? (

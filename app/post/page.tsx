@@ -158,7 +158,7 @@ export default function PostListingPage() {
             Post a listing
           </h1>
           <p className="text-slate-600">
-            Structured forms make posting fast and clear. Fill out the fields relevant to what you're posting.
+            Structured forms make posting fast and clear. Fill out the fields relevant to what you&apos;re posting.
           </p>
         </div>
 

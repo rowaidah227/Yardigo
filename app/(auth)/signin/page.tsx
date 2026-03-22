@@ -57,7 +57,7 @@ export default function SignInPage() {
             </form>
 
             <div className="text-center text-sm">
-              <p className="text-slate-600 mb-4">Don't have an account?</p>
+              <p className="text-slate-600 mb-4">Don&apos;t have an account?</p>
               <Link
                 href="/auth/signup"
                 className="text-slate-900 font-semibold hover:underline"
