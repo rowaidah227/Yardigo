@@ -46,13 +46,15 @@ export default function ListingsPage() {
 
     // Price filter
     if (filters.priceMin !== undefined) {
+      const minPrice = filters.priceMin;
       results = results.filter(
-        (listing) => listing.price === null || listing.price >= filters.priceMin
+        (listing) => listing.price === null || listing.price >= minPrice
       );
     }
     if (filters.priceMax !== undefined) {
+      const maxPrice = filters.priceMax;
       results = results.filter(
-        (listing) => listing.price === null || listing.price <= filters.priceMax
+        (listing) => listing.price === null || listing.price <= maxPrice
       );
     }
 
